@@ -7,92 +7,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div class="layout">
+<main class="layout">
     <div class="header">
         <a class="header__location" href="">
-            <svg class="header__geo-arrow" width='0' height='0' fill="#999" viewBox='0 0 19 19'>
-                <path  d='m15 4l-11.9 5.3 5.8 0.8 0.5 5.5 5.6-11.6z'/>
+            <svg class="header__geo-arrow link _red-hover"
+                 width='0'
+                 height='0'>
+                <use xlink:href="#geo-arrow"></use>
             </svg>
-            <div class="header__city">Москва</div>
+            <div class="header__city link _red-hover">Москва</div>
         </a>
         <div class="header__empty"></div>
-        <a class="header__settings" href="">Настройки</a>
+        <a class="header__settings link _red-hover" href="">Настройки</a>
     </div>
 
     <div class="side-desk-wrapper">
         <div class="mail-box">
             <div class="mail-box__inner-box">
                 <div class="mail-box__top-container">
-                    <a class="mail-box__mail" href="">Почта</a>
-                    <a class="mail-box__get-mail" href="">Завести почту</a>
+                    <a class="mail-box__mail link _red-hover" href="">Почта</a>
+                    <a class="mail-box__get-mail link _grey _red-hover" href="">Завести почту</a>
                 </div>
-                <a class="mail-box__enter-mail" href="">Войти в почту</a>
-                <a class="mail-box__get-plus" href="">Получить плюс</a>
+                <a class="mail-box__enter-mail link" href="">Войти в почту</a>
+                <a class="mail-box__get-plus link _blue _red-hover" href="">Получить плюс</a>
             </div>
         </div>
 
         <div class="dzen-box">
-            <div class="dzen-box__inner-box">
-                <div class="dzen-box__source">CAR.RU</div>
-                <div class="dzen-box__dzen-source-icon"></div>
-                <div class="dzen-box__text">К дилерам приехала новая Lada Granta</div>
+            <div class="dzen-box__wrapper">
+                <svg class="dzen-box__dzen-settings-icon link"
+                     width='0'
+                     height='0'>
+                    <use xlink:href="#dzen-settings-icon"></use>
+                </svg>
+                <div class="dzen-box__inner-box">
+                    <a class="dzen-box__source link" href="">CAR.RU</a>
+                    <!--<svg class="dzen-box__dzen-source-icon link"-->
+                    <!--width='0'-->
+                    <!--height='0'>-->
+                    <!--<use xlink:href="#dzen-source-icon"></use>-->
+                    <!--</svg>-->
+                    <div class="dzen-box__dzen-source-icon link"></div>
+                    <div class="dzen-box__text">К дилерам приехала новая Lada Granta</div>
+                </div>
+
             </div>
-            <div class="dzen-box__dzen-settings-icon"></div>
         </div>
     </div>
 
     <div class="top-block">
         <div class="top-block__news">
-            <div class="top-block__media">
+            <div class="top-block__media link _blue _red-hover">
                 Сейчас в СМИ
             </div>
-            <div class="top-block__city">
+            <div class="top-block__city link _light-blue _red-hover">
                 В Москве
             </div>
             <div class="top-block__date">
                 22 августа, среда 11:39
             </div>
             <ul class="top-block__news-list">
-                <li class="top-block__news-item">CNBC: Россия потеряла в море ракету с ядерным двигателем</li>
-                <li class="top-block__news-item">Эстония и Латвия хотят взыскать с РФ ущерб за «советскую оккупацию»
+                <li class="top-block__news-item link _red-hover">CNBC: Россия потеряла в море ракету с ядерным двигателем</li>
+                <li class="top-block__news-item link _red-hover">Эстония и Латвия хотят взыскать с РФ ущерб за «советскую
+                    оккупацию»
                 </li>
-                <li class="top-block__news-item">Пассажиры сняли на видео посадку Ту-204 с горящим двигателем</li>
-                <li class="top-block__news-item">США заблокировали российские активы на сотни миллионов долларов</li>
-                <li class="top-block__news-item">Болтон рассказал о рычагах давления США на Россию по Сирии</li>
+                <li class="top-block__news-item link _red-hover">Пассажиры сняли на видео посадку Ту-204 с горящим
+                    двигателем
+                </li>
+                <li class="top-block__news-item link _red-hover">США заблокировали российские активы на сотни миллионов
+                    долларов
+                </li>
+                <li class="top-block__news-item link _red-hover">Болтон рассказал о рычагах давления США на Россию по Сирии
+                </li>
             </ul>
             <div class="top-block__securities">
                 <div class="top-block__currency-1">
-                    <a class="top-block__name">USD MOEX</a>
+                    <a class="top-block__name link _red-hover">USD MOEX</a>
                     <span class="top-block__value">67,60</span>
                     <span class="top-block__difference top-block_positive">
                         +0,32
                     </span>
                 </div>
                 <div class="top-block__currency-2">
-                    <a class="top-block__name">EUR MOEX</a>
+                    <a class="top-block__name link _red-hover">EUR MOEX</a>
                     <span class="top-block__value">78,30</span>
                     <span class="top-block__difference top-block_positive">
                         +0,45
                     </span>
                 </div>
                 <div class="top-block__security">
-                    <a class="top-block__name">НЕФТЬ</a>
+                    <a class="top-block__name link _red-hover">НЕФТЬ</a>
                     <span class="top-block__value">75,66</span>
                     <span class="top-block__difference top-block_positive">
                         +1,23%
                     </span>
                 </div>
-                <div class="top-block__more-icon"></div>
+                <svg class="top-block__more-icon"
+                     width='0'
+                     height='0'>
+                    <use xlink:href="#more-icon"></use>
+                </svg>
             </div>
         </div>
 
         <div class="top-block__advert">
             <a class="top-block__image" href="">
-                <img src="https://avatars.mds.yandex.net/get-banana/41024/x258cO5zEU83R7Ygp5H_BWxN_banana_20161021_retina_19-3_x281x29.png/optimize"
-                     width="120" height="90">
+                <img src="assets/images/top-block-advert.png"
+                     width="120"
+                     height="90"
+                     alt="Flowers in Chania">
             </a>
             <div class="top-block__title-wrapper">
-                <a class="top-block__title" href="">
+                <a class="top-block__title link _red-hover" href="">
                     <span>Яндекс приглашает</span>
                     <br>
                     <span>на онлайн-курс</span>
@@ -106,24 +132,34 @@
 
     <div class="search">
         <div class="search__tabs-list">
-            <a class="search__tab" href="">Видео</a>
-            <a class="search__tab" href="">Картинки</a>
-            <a class="search__tab" href="">Новости</a>
-            <a class="search__tab" href="">Карты</a>
-            <a class="search__tab" href="">Маркет</a>
-            <a class="search__tab" href="">Переводчик</a>
-            <a class="search__tab" href="">Музыка</a>
-            <a class="search__tab" href="">ТВ онлайн</a>
-            <a class="search__tab" href="">ещё</a>
+            <a class="search__tab link _blue _red-hover" href="">Видео</a>
+            <a class="search__tab link _blue _red-hover" href="">Картинки</a>
+            <a class="search__tab link _blue _red-hover" href="">Новости</a>
+            <a class="search__tab link _blue _red-hover" href="">Карты</a>
+            <a class="search__tab link _blue _red-hover" href="">Маркет</a>
+            <a class="search__tab link _blue _red-hover" href="">Переводчик</a>
+            <a class="search__tab link _blue _red-hover" href="">Музыка</a>
+            <a class="search__tab link _blue _red-hover" href="">ТВ онлайн</a>
+            <a class="search__tab link _blue _red-hover" href="">ещё</a>
         </div>
 
         <div class="search__container">
             <div class="search__logo"></div>
 
             <form class="search__form">
-                <input class="search__left-form" type="text">
-                <div class="search__micro-logo"></div>
-                <div class="search__keyboard-logo"></div>
+                <input class="search__input-form" type="text">
+
+                <svg class="search__micro-icon"
+                     width='0'
+                     height='0'>
+                    <use xlink:href="#micro-icon"></use>
+                </svg>
+
+                <svg class="search__keyboard-icon"
+                     width='0'
+                     height='0'>
+                    <use xlink:href="#keyboard-icon"></use>
+                </svg>
             </form>
 
             <div class="search__button">
@@ -133,17 +169,242 @@
         </div>
 
         <div class="search__bottom">
-            <div class="search__suggest1">Найдётся всё. Например, &nbsp</div>
-            <a class="search__suggest2">температура тела кошки</a>
+            <div class="search__suggest-left">Найдётся всё. Например, &nbsp</div>
+            <a class="search__suggest-right link _grey _red-hover">температура тела кошки</a>
         </div>
     </div>
 
     <div class="advert">
         <div class="advert__container"></div>
     </div>
-</div>
+
+    <div class="blocks">
+        <div class="blocks__column">
+            <div class="blocks__item">
+                <div class="blocks__weather-widget">
+                    <h1 class="blocks__title">
+                        <a class="link _blue _l _red-hover" href="">Погода</a>
+                    </h1>
+                    <div class="blocks__weather-content">
+                        <a class="blocks__weather-left">
+                            <div class="blocks__weather-icon"></div>
+                            <div class="blocks__weather-temp link _red-hover">+29</div>
+                        </a>
+                        <div class="blocks__weather-right">
+                            <a class="link _red" href="">Вечером +23,</a>
+                            <br>
+                            <a class="link _red" href="">ночью +17</a>
+                        </div>
+                    </div>
+                </div>
+                <svg class="blocks__weather-widget-settings-icon"
+                     width="0"
+                     height="0">
+                    <use xlink:href="#widget-settings-icon"></use>
+                </svg>
+            </div>
+            <div class="blocks__item">
+                <div class="blocks__services-widget">
+                    <h1 class="blocks__title">
+                        <a class="link _blue _l _red-hover" href="">Посещаемое</a>
+                    </h1>
+                    <ul class="blocks__services-list">
+                        <li class="blocks__services-item">
+                            <a class="link _xl _red-hover">Маркет</a>
+                            <span>&nbsp;—&nbsp;</span>
+                            <a class="link _red-hover">всё для сада и огорода</a>
+                        </li>
+                        <li class="blocks__services-item">
+                            <a class="link _xl _red-hover">Авто.ру</a>
+                            <span>&nbsp;—&nbsp;</span>
+                            <a class="link _red-hover">правила осмотра салона</a>
+                        </li>
+                        <li class="blocks__services-item">
+                            <a class="link _xl _red-hover">Недвижимость</a>
+                            <span>&nbsp;—&nbsp;</span>
+                            <a class="link _red-hover">ЖК «Алые Паруса»</a>
+                        </li>
+                        <li class="blocks__services-item">
+                            <a class="link _xl _red-hover">Карты</a>
+                            <span>&nbsp;—&nbsp;</span>
+                            <a class="link _red-hover">блошиные рынки Москвы</a>
+                        </li>
+                        <li class="blocks__services-item">
+                            <a class="link _xl _red-hover">Коллекции</a>
+                            <span>&nbsp;—&nbsp;</span>
+                            <a class="link _red-hover">какую причёску сделать</a>
+                        </li>
+                        <li class="blocks__services-item">
+                            <a class="link _xl _red-hover">Здоровье</a>
+                            <span>&nbsp;—&nbsp; </span>
+                            <a class="link _red-hover">поговорите с врачом</a>
+                        </li>
+                        <li class="blocks__services-item">
+                            <a class="link _xl _red-hover">Авиабилеты</a>
+                            <span>&nbsp;—&nbsp;</span>
+                            <a class="link _red-hover">по России и миру</a>
+                        </li>
+                    </ul>
+                </div>
+                <svg class="blocks__services-widget-settings-icon"
+                     width="0"
+                     height="0">
+                    <use xlink:href="#widget-settings-icon"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="blocks__column">
+            <div class="blocks__item">
+                <div class="blocks__traffic-widget">
+                    <h1 class="blocks__title">
+                        <a class="link _blue _l _red-hover" href="">Пробки</a>
+                    </h1>
+                    <div class="blocks__traffic-content">
+                        <a class="blocks__traffic-left">
+                            <div class="blocks__traffic-icon"></div>
+                            <div class="blocks__traffic-rate link _red-hover">4</div>
+                        </a>
+                        <div class="blocks__traffic-forecast">
+                            <span class="blocks__traffic-forecast-item">
+                                <span class="blocks__traffic-forecast-item-time">10&thinsp;ч</span>
+                                <div class="blocks__traffic-forecast-item-value">4</div>
+                            </span>
+                            <span class="blocks__traffic-forecast-item">
+                                <span class="blocks__traffic-forecast-item-time">11&thinsp;ч</span>
+                                <div class="blocks__traffic-forecast-item-value">2</div>
+                            </span>
+                            <span class="blocks__traffic-forecast-item">
+                                <span class="blocks__traffic-forecast-item-time">12&thinsp;ч</span>
+                                <div class="blocks__traffic-forecast-item-value">1</div>
+                            </span>
+                            <span class="blocks__traffic-forecast-item">
+                                <span class="blocks__traffic-forecast-item-time">13&thinsp;ч</span>
+                                <div class="blocks__traffic-forecast-item-value">2</div>
+                            </span>
+                            <span class="blocks__traffic-forecast-item">
+                                <span class="blocks__traffic-forecast-item-time">14&thinsp;ч</span>
+                                <div class="blocks__traffic-forecast-item-value">3</div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <svg class="blocks__weather-widget-settings-icon"
+                     width="0"
+                     height="0">
+                    <use xlink:href="#widget-settings-icon"></use>
+                </svg>
+            </div>
+            <div class="blocks__item">
+                <div class="blocks__tv-widget">
+                    <h1 class="blocks__title">
+                        <a class="link _blue _l _red-hover" href="">Телепрограмма</a>
+                    </h1>
+                    <ul class="blocks__services-list">
+                        <li class="blocks__services-item">
+                            <span class="blocks__services-item-elem">15:15</span>
+                            <span>
+                                <a class="blocks__services-item-elem link _red-hover">Давай поженимся!</a>
+                                <a class="blocks__services-item-elem link _grey _red-hover">Первый</a>
+                            </span>
+                        </li>
+                        <li class="blocks__services-item">
+                            <span class="blocks__services-item-elem">15:15</span>
+                            <span>
+                                <a class="blocks__services-item-elem link _red-hover">Улицы разбитых… </a>
+                                <a class="blocks__services-item-elem link _grey _red-hover">Пятый канал</a>
+                            </span>
+                        </li>
+                        <li class="blocks__services-item">
+                            <span class="blocks__services-item-elem">15:15</span>
+                            <span>
+                                <a class="blocks__services-item-elem link _red-hover">За дело!</a>
+                                <a class="blocks__services-item-elem link _grey _red-hover">ОТР</a>
+                            </span>
+                        </li>
+                        <li class="blocks__services-item">
+                            <span class="blocks__services-item-elem">15:30</span>
+                            <span>
+                                <a class="blocks__services-item-elem link _red-hover">
+Интерны</a>
+                                <a class="blocks__services-item-elem link _grey _red-hover">ТНТ</a>
+                            </span>
+                        </li>
+                        <li class="blocks__services-item">
+                            <span class="blocks__services-item-elem">15:40</span>
+                            <span>
+                                <a class="blocks__services-item-elem link _red-hover">Новый взгляд на…</a>
+                                <a class="blocks__services-item-elem link _grey _red-hover">Культура</a>
+                            </span>
+                        </li>
+                        <li class="blocks__services-item">
+                            <span class="blocks__services-item-elem">15:50</span>
+                            <span>
+                                <a class="blocks__services-item-elem link _red-hover">Вести.net</a>
+                                <a class="blocks__services-item-elem link _grey _red-hover">Россия 24</a>
+                            </span>
+                        </li>
+                        <li>
+                            <a class="link _xl _red-hover">Канал МУЗ-ТВ в прямом эфире</a>
+                        </li>
+                    </ul>
+                </div>
+                <svg class="blocks__tv-widget-settings-icon"
+                     width="0"
+                     height="0">
+                    <use xlink:href="#widget-settings-icon"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="blocks__column">
+            <div class="blocks__item">
+
+            </div>
+            <div class="blocks__item">
+                <div class="blocks__billboard-widget">
+                    <h1 class="blocks__title">
+                        <a class="link _blue _l _red-hover" href="">Афиша</a>
+                    </h1>
+                    <ul class="blocks__billboard-list">
+                        <li class="blocks__billboard-item">
+                            <a class="blocks__billboard-item-elem link _red-hover">Давай поженимся!</a>
+                            <span class="blocks__billboard-item-elem">Первый</span>
+                        </li>
+                        <li class="blocks__billboard-item">
+                            <a class="blocks__billboard-item-elem link _red-hover">Давай поженимся!</a>
+                            <span class="blocks__billboard-item-elem">Первый</span>
+                        </li>
+                        <li class="blocks__billboard-item">
+                            <a class="blocks__billboard-item-elem link _red-hover">Давай поженимся!</a>
+                            <span class="blocks__billboard-item-elem">Первый</span>
+                        </li>
+                        <li class="blocks__billboard-item">
+                            <a class="blocks__billboard-item-elem link _red-hover">Давай поженимся!</a>
+                            <span class="blocks__billboard-item-elem">Первый</span>
+                        </li>
+                        <li class="blocks__billboard-item">
+                            <a class="blocks__billboard-item-elem link _red-hover">Давай поженимся!</a>
+                            <span class="blocks__billboard-item-elem">Первый</span>
+                        </li>
+                        <li class="blocks__billboard-item">
+                            <a class="blocks__billboard-item-elem link _red-hover">Давай поженимся!</a>
+                            <span class="blocks__billboard-item-elem">Первый</span>
+                        </li>
+                        <li>
+                            <a class="link _xl _red-hover">Канал МУЗ-ТВ в прямом эфире</a>
+                        </li>
+                    </ul>
+                </div>
+                <svg class="blocks__tv-widget-settings-icon"
+                     width="0"
+                     height="0">
+                    <use xlink:href="#widget-settings-icon"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</main>
 <!-- inject:svg -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="dzen-source-icon-a" cx="45.5" cy="45.5" r="45.5"/><linearGradient x1="91.777%" y1="50%" x2="7.78%" y2="50%" id="dzen-source-icon-b"><stop stop-color="#D8D8D8" offset="0%"/><stop stop-color="#BCBCBC" offset="100%"/></linearGradient><path d="M15 4L3.1 9.3l5.8.8.5 5.5L15 4z" id="geo-arrow-a"/></defs><symbol id="dzen-settings-icon" viewBox="0 0 24 24"><circle cx="16" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="8" cy="12" r="1"/></symbol><symbol id="dzen-source-icon" viewBox="0 0 91 91"><g fill-rule="evenodd"><mask id="dzen-source-icon-c"><use xlink:href="#dzen-source-icon-a"/></mask><use xlink:href="#dzen-source-icon-a"/><path mask="url(#dzen-source-icon-c)" transform="rotate(-41 45.615 44.689)" d="M28.238 39.556h34.755v10.265H28.238z"/><path opacity=".5" mask="url(#dzen-source-icon-c)" transform="rotate(-41 45.346 81.22)" d="M27.968 76.087h34.755v10.265H27.968z"/><path opacity=".5" mask="url(#dzen-source-icon-c)" transform="rotate(-41 45.747 8.46)" d="M28.369 3.327h34.755v10.265H28.369z"/><path mask="url(#dzen-source-icon-c)" d="M29.264 15.634l32.873 11.292v10.266L29.264 25.857zm-.2 36.571L61.936 63.64v10.222L29.064 62.47z"/></g></symbol><symbol id="geo-arrow" viewBox="0 0 19 38"><use xmlns="http://www.w3.org/2000/svg" xlink:href="#geo-arrow-a"/><use xmlns="http://www.w3.org/2000/svg" xlink:href="#geo-arrow-a" transform="translate(0 19)"/></symbol><symbol id="keyboard-icon"><path opacity=".3" fill-rule="evenodd" clip-rule="evenodd" d="M25.693 0H1.54C.436 0 .013.422.013 1.527v8.961c0 1.105.423 1.527 1.527 1.527h24.153c1.104 0 1.307-.422 1.307-1.527V1.527C27 .422 26.798 0 25.693 0zm-2.672 2.061h1.935v1.934h-1.935V2.061zm-6 0h1.935v1.934h-1.935V2.061zm2.935 3v1.934h-1.935V5.061h1.935zm-5.935-3h1.935v1.934h-1.935V2.061zm2.935 3v1.934h-1.935V5.061h1.935zm-5.935-3h1.935v1.934h-1.935V2.061zm2.935 3v1.934h-1.935V5.061h1.935zm-5.935-3h1.935v1.934H8.021V2.061zm2.935 3v1.934H9.021V5.061h1.935zm-5.935-3h1.935v1.934H5.021V2.061zm-3 0h1.935v1.934H2.021V2.061zm0 3h2.994v1.934H2.021V5.061zm3.95 4.933H1.993V8.061h3.978v1.933zm.05-4.933h1.935v1.934H6.021V5.061zm13.95 4.933H7.008V8.061h12.963v1.933zm.05-7.933h1.935v1.934h-1.935V2.061zm4.95 7.933h-3.978V8.061h3.978v1.933zM25 6.995h-3.979V5.061H25v1.934z"/></symbol><symbol id="logo" viewBox="0 0 140 100"><g fill-rule="evenodd"><path d="M72.964 64.533h-2.16l-.01-23.496H58.167v2.3c0 7.171-.26 15.47-2.742 21.196H53.75v8.468h3.777v-5.043h11.658V73h3.778v-8.468zM89.74 63.01c-1.08.75-2.969 1.82-5.343 1.82-3.346 0-5.073-3.211-5.073-9.311h11.333v-2.301c0-9.15-2.968-12.522-7.502-12.522-5.774 0-8.203 6.314-8.203 14.983 0 8.294 3.454 12.735 9.067 12.735 2.698 0 4.965-.856 6.692-2.193l-.971-3.211zM46.636 41.003v11.511h-6.26v-11.51h-4.21v26.969h4.21V55.807h6.26v12.166h4.156v-26.97h-4.156zm59.629 26.96h4.587l-7.717-14.288 6.746-12.682h-4.264l-6.53 12.468V40.993h-4.21v26.97h4.21V54.53l7.178 13.431zm20.48-1.688l-.972-3.104c-.972.856-2.537 1.659-4.587 1.659-3.4 0-5.02-3.853-5.02-10.595 0-6.796 2.16-10.167 5.181-10.167 1.727 0 3.346.91 4.48 1.873l.594-3.96c-1.188-.749-2.591-1.391-5.02-1.391-6.368 0-9.66 5.404-9.66 13.859 0 9.204 3.508 13.86 9.337 13.86 2.482 0 4.21-.803 5.666-2.034zm-60.048-1.647h-7.232C61.73 58.903 62 50.608 62 44.936v-.481h4.696v20.173zm19.605-12.484H79.34c.27-4.816 1.187-7.973 3.777-7.973 2.429 0 3.185 3.371 3.185 7.973z"/><path d="M26.841 53.707v14.288h4.156V30.004H24.79c-6.098 0-11.225 4.119-11.225 12.145 0 5.726 2.267 8.83 5.667 10.542L12 67.995h4.803l6.584-14.288h3.454zm-.013-3.333h-2.212c-3.616 0-6.585-1.98-6.585-8.134 0-6.367 3.238-8.64 6.585-8.64h2.212v16.774z"/></g></symbol><symbol id="micro-icon" viewBox="0 0 18 18"><path d="M9 11.25A2.25 2.25 0 0 0 11.25 9V5.062a2.25 2.25 0 0 0-4.5 0V9A2.25 2.25 0 0 0 9 11.25zM13.5 9h-1.125c0 .848-.32 1.668-.898 2.289a3.37 3.37 0 0 1-4.954.004A3.372 3.372 0 0 1 5.625 9H4.5a4.491 4.491 0 0 0 3.937 4.461v1.727h1.125v-1.727A4.494 4.494 0 0 0 13.499 9zm0 0" fill-rule="evenodd"/></symbol></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="dzen-source-icon-a" cx="45.5" cy="45.5" r="45.5"/><linearGradient x1="91.777%" y1="50%" x2="7.78%" y2="50%" id="dzen-source-icon-b"><stop stop-color="#D8D8D8" offset="0%"/><stop stop-color="#BCBCBC" offset="100%"/></linearGradient><radialGradient cy="50.27%" fx="50%" fy="50.27%" r="48.4%" id="weather-icon-a"><stop stop-color="#FFC227" offset="0%"/><stop stop-color="#FFB300" offset="100%"/></radialGradient><radialGradient cx="10.96%" cy="64.36%" fx="10.96%" fy="64.36%" r="56.51%" id="weather-icon-b"><stop stop-color="#E85423" offset="0%"/><stop stop-color="#E85423" stop-opacity="0" offset="100%"/></radialGradient><radialGradient cx="56.96%" cy="106.36%" fx="56.96%" fy="106.36%" r="39.88%" id="weather-icon-d"><stop stop-color="#E85423" offset="0%"/><stop stop-color="#E85423" stop-opacity="0" offset="100%"/></radialGradient><circle id="weather-icon-c" cx="6" cy="6" r="6"/><radialGradient cx="88.2%" cy="11.31%" fx="88.2%" fy="11.31%" r="51.28%" gradientTransform="matrix(0 -.975 1 0 .77 .97)" id="weather-icon-e"><stop stop-color="#9699C7" offset="0%"/><stop stop-color="#9499C9" stop-opacity="0" offset="100%"/></radialGradient><radialGradient cx="8.17%" cy="-6.53%" fx="8.17%" fy="-6.53%" r="65.22%" gradientTransform="matrix(0 -.975 1 0 .15 .01)" id="weather-icon-f"><stop stop-color="#9699C7" offset="0%"/><stop stop-color="#9499C9" stop-opacity="0" offset="100%"/></radialGradient><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="weather-icon-g"><stop stop-color="#A4C5F4" offset="0%"/><stop stop-color="#A7C7F2" offset="100%"/></linearGradient><radialGradient cx="88.2%" cy="9.46%" fx="88.2%" fy="9.46%" r="49.38%" gradientTransform="matrix(0 -.975 1 0 .79 .95)" id="weather-icon-h"><stop stop-color="#486DA8" offset="0%"/><stop stop-color="#486DA8" stop-opacity="0" offset="100%"/></radialGradient><radialGradient cx="14.44%" cy="0%" fx="14.44%" fy="0%" r="51.28%" gradientTransform="matrix(0 -.975 1 0 .14 .14)" id="weather-icon-i"><stop stop-color="#486DA8" offset="0%"/><stop stop-color="#486DA8" stop-opacity="0" offset="100%"/></radialGradient><linearGradient x1="50%" y1="0%" x2="50%" y2="122.37%" id="weather-icon-j"><stop stop-color="#A4C5F4" offset="0%"/><stop stop-color="#A7C7F2" offset="100%"/></linearGradient></defs><symbol id="dzen-settings-icon" viewBox="0 0 24 24"><circle cx="16" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="8" cy="12" r="1"/></symbol><symbol id="dzen-source-icon" viewBox="0 0 91 91"><g fill-rule="evenodd"><mask id="dzen-source-icon-c"><use xlink:href="#dzen-source-icon-a"/></mask><use xlink:href="#dzen-source-icon-a"/><path mask="url(#dzen-source-icon-c)" transform="rotate(-41 45.615 44.689)" d="M28.238 39.556h34.755v10.265H28.238z"/><path opacity=".5" mask="url(#dzen-source-icon-c)" transform="rotate(-41 45.346 81.22)" d="M27.968 76.087h34.755v10.265H27.968z"/><path opacity=".5" mask="url(#dzen-source-icon-c)" transform="rotate(-41 45.747 8.46)" d="M28.369 3.327h34.755v10.265H28.369z"/><path mask="url(#dzen-source-icon-c)" d="M29.264 15.634l32.873 11.292v10.266L29.264 25.857zm-.2 36.571L61.936 63.64v10.222L29.064 62.47z"/></g></symbol><symbol id="geo-arrow" viewBox="0 0 19 19"><path d="M15 4L3.1 9.3l5.8.8.5 5.5L15 4z"/></symbol><symbol id="keyboard-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M25.693 0H1.54C.436 0 .013.422.013 1.527v8.961c0 1.105.423 1.527 1.527 1.527h24.153c1.104 0 1.307-.422 1.307-1.527V1.527C27 .422 26.798 0 25.693 0zm-2.672 2.061h1.935v1.934h-1.935V2.061zm-6 0h1.935v1.934h-1.935V2.061zm2.935 3v1.934h-1.935V5.061h1.935zm-5.935-3h1.935v1.934h-1.935V2.061zm2.935 3v1.934h-1.935V5.061h1.935zm-5.935-3h1.935v1.934h-1.935V2.061zm2.935 3v1.934h-1.935V5.061h1.935zm-5.935-3h1.935v1.934H8.021V2.061zm2.935 3v1.934H9.021V5.061h1.935zm-5.935-3h1.935v1.934H5.021V2.061zm-3 0h1.935v1.934H2.021V2.061zm0 3h2.994v1.934H2.021V5.061zm3.95 4.933H1.993V8.061h3.978v1.933zm.05-4.933h1.935v1.934H6.021V5.061zm13.95 4.933H7.008V8.061h12.963v1.933zm.05-7.933h1.935v1.934h-1.935V2.061zm4.95 7.933h-3.978V8.061h3.978v1.933zM25 6.995h-3.979V5.061H25v1.934z"/></symbol><symbol id="logo" viewBox="0 0 140 100"><g fill-rule="evenodd"><path d="M72.964 64.533h-2.16l-.01-23.496H58.167v2.3c0 7.171-.26 15.47-2.742 21.196H53.75v8.468h3.777v-5.043h11.658V73h3.778v-8.468zM89.74 63.01c-1.08.75-2.969 1.82-5.343 1.82-3.346 0-5.073-3.211-5.073-9.311h11.333v-2.301c0-9.15-2.968-12.522-7.502-12.522-5.774 0-8.203 6.314-8.203 14.983 0 8.294 3.454 12.735 9.067 12.735 2.698 0 4.965-.856 6.692-2.193l-.971-3.211zM46.636 41.003v11.511h-6.26v-11.51h-4.21v26.969h4.21V55.807h6.26v12.166h4.156v-26.97h-4.156zm59.629 26.96h4.587l-7.717-14.288 6.746-12.682h-4.264l-6.53 12.468V40.993h-4.21v26.97h4.21V54.53l7.178 13.431zm20.48-1.688l-.972-3.104c-.972.856-2.537 1.659-4.587 1.659-3.4 0-5.02-3.853-5.02-10.595 0-6.796 2.16-10.167 5.181-10.167 1.727 0 3.346.91 4.48 1.873l.594-3.96c-1.188-.749-2.591-1.391-5.02-1.391-6.368 0-9.66 5.404-9.66 13.859 0 9.204 3.508 13.86 9.337 13.86 2.482 0 4.21-.803 5.666-2.034zm-60.048-1.647h-7.232C61.73 58.903 62 50.608 62 44.936v-.481h4.696v20.173zm19.605-12.484H79.34c.27-4.816 1.187-7.973 3.777-7.973 2.429 0 3.185 3.371 3.185 7.973z"/><path d="M26.841 53.707v14.288h4.156V30.004H24.79c-6.098 0-11.225 4.119-11.225 12.145 0 5.726 2.267 8.83 5.667 10.542L12 67.995h4.803l6.584-14.288h3.454zm-.013-3.333h-2.212c-3.616 0-6.585-1.98-6.585-8.134 0-6.367 3.238-8.64 6.585-8.64h2.212v16.774z"/></g></symbol><symbol id="micro-icon" viewBox="0 0 18 18"><path d="M9 11.25A2.25 2.25 0 0 0 11.25 9V5.062a2.25 2.25 0 0 0-4.5 0V9A2.25 2.25 0 0 0 9 11.25zM13.5 9h-1.125c0 .848-.32 1.668-.898 2.289a3.37 3.37 0 0 1-4.954.004A3.372 3.372 0 0 1 5.625 9H4.5a4.491 4.491 0 0 0 3.937 4.461v1.727h1.125v-1.727A4.494 4.494 0 0 0 13.499 9zm0 0" fill-rule="evenodd"/></symbol><symbol id="more-icon" viewBox="0 0 15 15"><ellipse cx="2.5" cy="7.5" rx="1.5" ry="1.5"/><ellipse cx="7.5" cy="7.5" rx="1.5" ry="1.5"/><ellipse cx="12.5" cy="7.5" rx="1.5" ry="1.5"/></symbol><symbol id="news-item-icon"><path fill-rule="evenodd" d="M1 0h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1zm9.92 6.79H12V4H4.53v.68H6v6.64H4.53V12h4.46v-.68H7.52V4.68h3.4v2.1z"/></symbol><symbol id="traffic-icon" viewBox="0 0 33 30"><g fill-rule="evenodd"><path d="M28.833 17.404c.027-.37 0-1.506 0-1.882 0-8.254-6.681-14.945-14.922-14.945-4.065 0-7.717 1.661-10.44 4.265C1.024 7.18 0 10.579 0 12.962c0 3.046 1.89 4.442 3.466 4.442h25.367z"/><path d="M33 15c0 7.965-6.458 14.423-14.423 14.423-7.964 0-14.422-6.458-14.422-14.423C4.155 7.034 10.613.577 18.577.577 26.542.577 33 7.034 33 15z"/><path d="M18.323.58l.254-.003C26.542.577 33 7.034 33 15c0 .572-.034 1.137-.099 1.692-2.3-.014-4.073-.994-4.653-3.75-1.092-5.193-4.832-9.635-9.904-11.474a15.41 15.41 0 0 0-2.452-.642h.003a15.791 15.791 0 0 0-2.51-.246h4.938z"/></g></symbol><symbol id="weather-icon"><g fill-rule="evenodd"><g transform="translate(12 3.5)"><circle cx="12" cy="12" r="6"/><path d="M9 1.49a1.13 1.13 0 0 1 2.22-.4l.39 2.22a1.13 1.13 0 0 1-2.22.4L9 1.48zm3.39 19.2a1.12 1.12 0 1 1 2.22-.4l.39 2.22a1.12 1.12 0 1 1-2.22.4l-.39-2.22zm4.93-18.24a1.12 1.12 0 1 1 1.84 1.29l-1.3 1.84a1.13 1.13 0 0 1-1.83-1.29l1.29-1.84zM6.13 18.42a1.13 1.13 0 0 1 1.84 1.29l-1.29 1.84a1.12 1.12 0 1 1-1.84-1.29l1.3-1.84zM2.45 6.68a1.12 1.12 0 1 1 1.29-1.84l1.84 1.3a1.13 1.13 0 0 1-1.29 1.83L2.45 6.68zm15.97 11.19a1.12 1.12 0 1 1 1.29-1.84l1.84 1.29a1.12 1.12 0 1 1-1.29 1.84l-1.84-1.3zM22.51 9a1.12 1.12 0 1 1 .4 2.22l-2.22.39a1.13 1.13 0 0 1-.4-2.22L22.52 9zM1.49 15a1.13 1.13 0 0 1-.4-2.22l2.22-.39a1.12 1.12 0 1 1 .4 2.22L1.48 15z" fill-rule="nonzero"/></g><g transform="translate(18 9.5)" opacity=".5"><use xlink:href="#weather-icon-c"/><use xlink:href="#weather-icon-c"/></g><g transform="translate(1.5 10.55)"><ellipse opacity=".2" cx="7.5" cy="12.31" rx="6" ry="6.15"/><ellipse opacity=".2" cx="23.25" cy="14.62" rx="3.75" ry="3.85"/><path d="M7.5 18.46c-3.31 0-6-2.75-6-6.15 0-3.4 2.69-6.16 6-6.16a6 6 0 0 1 1.8.28 6.78 6.78 0 0 1 6.45-4.9 6.84 6.84 0 0 1 6.67 8 4.4 4.4 0 0 1 1.58-.3c2.49 0 4.5 2.07 4.5 4.62a4.56 4.56 0 0 1-4.5 4.61H7.5z"/><ellipse opacity=".34" cx="7.5" cy="12.31" rx="6" ry="6.15"/><ellipse opacity=".2" cx="24" cy="13.85" rx="4.5" ry="4.62"/><ellipse cx="15.75" cy="8.46" rx="6.75" ry="6.92"/></g></g></symbol><symbol id="widget-settings-icon" viewBox="0 0 21 21"><path d="M10.648 16.99a.498.498 0 0 1-.453-.29l-.762-1.623-1.43 1.115a.504.504 0 0 1-.605.008l-1.32-.97a.5.5 0 0 1-.176-.568l.574-1.65-1.782-.235a.499.499 0 0 1-.426-.405l-.302-1.645a.498.498 0 0 1 .285-.546l1.65-.76-1.17-1.47a.495.495 0 0 1-.01-.6l.98-1.32c.13-.17.36-.244.56-.174l1.75.587.266-1.835a.496.496 0 0 1 .426-.423l1.666-.224c.214-.03.42.08.516.276l.826 1.657L13.144 4.8a.501.501 0 0 1 .6-.003l1.316.97a.5.5 0 0 1 .178.57l-.63 1.74 1.78.26c.214.03.383.195.42.407l.294 1.64a.5.5 0 0 1-.29.544l-1.56.685 1.046 1.4c.13.176.13.417 0 .594l-.97 1.323c-.13.18-.36.26-.576.18l-1.712-.62-.252 1.826c-.03.22-.2.39-.417.425l-1.64.26a.465.465 0 0 1-.075.006zm-1.335-2.954c.038 0 .076.004.113.013l.476.11c.15.03.276.13.34.27l.7 1.5.905-.14.232-1.69c.02-.15.1-.28.22-.36l.4-.253a.5.5 0 0 1 .434-.047l1.59.578.53-.72-1.06-1.416a.503.503 0 0 1-.087-.415l.066-.28a.501.501 0 0 1 .286-.347l1.57-.685-.16-.897-1.667-.242a.503.503 0 0 1-.36-.24l-.233-.404a.51.51 0 0 1-.04-.424l.58-1.614-.714-.525L12.1 6.822a.502.502 0 0 1-.428.084l-.465-.12a.492.492 0 0 1-.323-.26l-.76-1.536-.937.13-.243 1.71a.497.497 0 0 1-.23.35l-.375.236a.507.507 0 0 1-.425.05l-1.647-.56-.53.715 1.08 1.35c.093.12.128.27.095.42l-.11.493a.504.504 0 0 1-.283.347l-1.515.688.166.9 1.7.225c.15.02.28.104.36.23l.22.35c.082.128.1.287.05.43l-.54 1.577.72.53L9 14.13a.486.486 0 0 1 .306-.104z"/><path d="M10.538 12.7c-1.235 0-2.246-.99-2.253-2.21a2.25 2.25 0 0 1 2.188-2.25c1.297 0 2.275.978 2.283 2.225a2.234 2.234 0 0 1-.654 1.57 2.23 2.23 0 0 1-1.558.665h-.006zm-.013-3.46c-.69.015-1.244.585-1.24 1.245.004.67.566 1.215 1.253 1.215v.5l.004-.5c.308 0 .618-.136.85-.37a1.222 1.222 0 0 0-.866-2.09z"/></symbol></svg>
 <!-- endinject -->
 </body>
 </html>

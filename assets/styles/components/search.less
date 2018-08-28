@@ -1,3 +1,5 @@
+@import "global.less";
+
 .search {
   box-sizing: content-box;
   width: 900px;
@@ -5,11 +7,8 @@
   margin: 0 auto;
   padding: 0 36px 0 0;
 
-
-
   &__tabs-list {
     display: flex;
-    flex-direction: row;
     margin-bottom: 10px;
     margin-top: 9px;
     font-size: 1.16em;
@@ -21,15 +20,9 @@
     color: #0054b9;;
   }
 
-  &__tab:hover {
-    color: #cc0000;;
-  }
-
-
-
   &__container {
+    position: relative;
     display: flex;
-    flex-direction: row;
     width: 100%;
   }
 
@@ -37,68 +30,73 @@
     position: absolute;
     margin-top: -35px;
     margin-left: -140px;
-    background-image: url(../../../../assets/images/logo.svg);
+    background-image: url(../../../assets/images/logo.svg);
     width: 140px;
     height: 100px;
+    cursor: pointer;
   }
 
   &__form {
     display: flex;
+    align-items: center;
     border-collapse: collapse;
-    border: 2px solid #ffdb4d;
+    height: 34px;
+    border: 2px solid @yellow;
     border-right-width: 0;
-    height: 36px;
   }
 
-  &__left-form {
-    width: 748px;
-    height: 36px;
+  &__input-form {
+    width: 680px;
+    height: 34px;
     border: 0 solid transparent;
     box-sizing: border-box;
     border-right-width: 30px;
     border-left-width: 13px;
   }
 
-  &__micro-logo {
-    width: 32px;
+  &__micro-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding-right: 4px;
     opacity: .17;
-    background: url(../../../../assets/images/micro-icon.svg) no-repeat 50% 50%;
     transition: opacity 0.2ms ease-in;
+    &:hover {
+      opacity: .34;
+    }
   }
 
-  &__keyboard-logo {
-    margin-right: 5px;
+  &__keyboard-icon {
+    display: inline-block;
     width: 27px;
-    opacity: .5;
-    background: url(../../../../assets/images/keyboard-icon.svg) no-repeat 50% 50%;
+    height: 12px;
+    padding-left: 2px;
+    padding-right: 11px;
+    opacity: .17;
     transition: opacity 0.2ms ease-in;
-  }
-
-  &__keyboard-logo:hover {
-    opacity: 1;
-  }
-  &__micro-logo:hover {
-    opacity: .34;
+    &:hover {
+      opacity: .34;
+    }
   }
 
   &__button {
     width: 88px;
     display: flex;
+    cursor: pointer;
   }
 
   &__text-search {
     width: 76px;
-    height: 36px;
+    height: 34px;
 
-    background-color: #ffdb4d;
-    border: 2px solid #ffdb4d;
+    background-color: @yellow;
+    border: 2px solid @yellow;
 
-    line-height: 36px;
+    line-height: 34px;
     vertical-align: middle;
     text-align: center;
 
-    //font-weight: 400;
-    font: 400 13.3333px Arial;
+    font-weight: 500;
   }
 
   &__triangle {
@@ -106,7 +104,7 @@
     height: 0;
     border-style: solid;
     border-width: 20px 0 20px 12px;
-    border-color: transparent transparent transparent #ffdb4d;
+    border-color: transparent transparent transparent @yellow;
   }
 
   &__bottom {
@@ -115,12 +113,7 @@
     margin-top: 8px;
   }
 
-  &__suggest2 {
-    color: #999;
-    transition: color .15s ease-out;
-  }
-
-  &__suggest2:hover {
-    color: #cc0000;
+  &__suggest-right {
+    color: @grey;
   }
 }

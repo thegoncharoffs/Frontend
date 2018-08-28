@@ -1,11 +1,11 @@
+@import "global.less";
+
 .top-block {
   position: relative;
   box-sizing: content-box;
   display: flex;
   width: 900px;
-  //width: calc(100% - 212px);
   margin: 0 auto 15px;
-  //margin-right: -212px;
   padding: 0 36px 0 0;
   min-height: 215px;
 
@@ -20,24 +20,16 @@
     padding-left: 0;
   }
 
-  &__news-item:hover {
-    color:#cc0000;
-  }
-
   &__media {
     display: inline-block;
     margin-right: 12px;
     white-space: nowrap;
-    color: #0054b9;
+    color: @blue;
     touch-action: manipulation;
     text-decoration: none;
     outline: none;
     font-size: 123%;
-    font-weight: 500;
-  }
-
-  &__media:hover {
-    color: #cc0000;
+    font-weight: 600;
   }
 
   &__city {
@@ -45,16 +37,12 @@
     margin-right: 12px;
     white-space: nowrap;
     cursor: pointer;
-    color: #6da2e1;
+    color: @light-blue;
     touch-action: manipulation;
     text-decoration: none;
     outline: none;
     font-size: 123%;
     font-weight: 500;
-  }
-
-  &__city:hover {
-    color: #cc0000;
   }
 
   &__date {
@@ -67,6 +55,17 @@
 
   &__news-item {
     margin-bottom: 10px;
+    list-style-type: none;
+  }
+
+  &__news-item::before {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    margin: 0px 7px 0 -21px;
+    content: "";
+    background: url(../../../assets/images/news-item-icon.svg) no-repeat 50% 50% ;
   }
 
   &__securities {
@@ -86,7 +85,7 @@
   }
 
   &__name {
-     font-weight: 500;
+     font-weight: 600;
      text-transform: uppercase;
      letter-spacing: 1px;
      transition: color .15s ease-out;
@@ -94,10 +93,6 @@
      text-decoration: none;
      outline: none;
    }
-
-  &__name:hover {
-    color: #cc0000;
-  }
 
   &__difference {
     //margin: -2px -2px -2px 7px;
@@ -114,12 +109,18 @@
     color: #069922;
   }
 
-  &__currency-more-icon {
+  &__more-icon {
     display: inline-block;
     width: 15px;
     height: 15px;
+    margin-left: -10px;
     vertical-align: bottom;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15'%3E%3Cellipse cx='2.5' cy='7.5' rx='1.5' ry='1.5'/%3E%3Cellipse cx='7.5' cy='7.5' rx='1.5' ry='1.5'/%3E%3Cellipse cx='12.5' cy='7.5' rx='1.5' ry='1.5'/%3E%3C/svg%3E");
+    opacity: 0.17;
+    transition: opacity 0.2s ease-out;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.34;
+    }
   }
 
   &__advert {
@@ -136,10 +137,6 @@
     color: black;
     font-size: 123%;
     font-weight: 500;
-  }
-
-  &__title:hover {
-    color: #cc0000;
   }
 
   &__description {

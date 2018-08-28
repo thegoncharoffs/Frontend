@@ -3,13 +3,13 @@
 //Подключаем модули
 const gulp = require("gulp"),
       browserSync = require('browser-sync').create(),
-      concat = require('gulp-concat'),
+      //concat = require('gulp-concat'),
       debug = require('gulp-debug'),
       less = require('gulp-less'),
       autoprefixer = require('gulp-autoprefixer'),
       del = require('del'),
       svgmin   = require("gulp-svgmin"),
-      rename   = require("gulp-rename"),
+      //rename   = require("gulp-rename"),
       inject   = require("gulp-inject"),
       svgstore = require("gulp-svgstore"),
       path = require("path");
@@ -88,7 +88,7 @@ gulp.task('serve', function() {
         server: "./"
     });
 
-    gulp.watch("assets/styles/components/**/*.less", gulp.series('less'));
+    gulp.watch("assets/styles/components/*.less", gulp.series('less'));
     //Событие при изменении
     gulp.watch("*.html").on('change', browserSync.reload);
 });

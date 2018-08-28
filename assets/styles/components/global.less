@@ -1,0 +1,39 @@
+@red: #cc0000;
+@grey: #999;
+@yellow: #ffdb4d;
+@blue: #0054b9;
+@light-blue: #6da2e1;
+
+.link {
+  transition: color .15s ease-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  //size
+  &._l {
+    font-weight: 600;
+  }
+
+  &._xl {
+    font-weight: 700;
+  }
+
+  //color
+  &._light-blue {
+    color: @light-blue;
+  }
+
+  &._blue {
+    color: @blue;
+  }
+
+  &._grey {
+    color: @grey;
+  }
+  //hover
+  &._red-hover:hover {
+    color: @red;
+    fill: @red;
+  }
+}
