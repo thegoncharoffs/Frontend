@@ -1,0 +1,36 @@
+{
+  "name": "Yandex",
+  "version": "1.0.0",
+  "description": "Yandex main page",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegoncharoffs/Frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thegoncharoffs/Frontend/issues"
+  },
+  "homepage": "https://github.com/thegoncharoffs/Frontend#readme",
+  "dependencies": {
+    "gulp-inject": "^4.3.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "del": "^3.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.2",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-less": "^4.0.1",
+    "gulp-svg-sprite": "^1.4.0"
+  }
+}

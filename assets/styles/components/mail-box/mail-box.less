@@ -1,0 +1,79 @@
+.mail-box {
+  position: relative;
+  overflow: hidden;
+  max-height: 600px;
+  padding: 2px 2px 0 18px;
+  -webkit-transition: max-height .3s .1s;
+  transition: max-height .3s .1s;
+
+  &__inner-box {
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    padding: 12px 14px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+  }
+
+  &__top-container {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
+  &__mail {
+    text-decoration: none;
+    color:black;
+    transition: color .15s ease-out;
+  }
+
+  &__mail:hover {
+    color: #cc0000;
+  }
+
+  &__get-mail {
+    text-decoration: none;
+    color: rgba(0,0,0,.45);
+    transition: color .15s ease-out;
+  }
+
+  &__get-mail:hover {
+    color: #cc0000;
+  }
+
+  &__enter-mail {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 18px;
+    padding: 7px 0 8px;
+    transition: background .15s;
+    border-radius: 3px;
+    background: #e8e8e8;
+    color: #000;
+    text-align: center;
+    vertical-align: center;
+    text-decoration: none;
+  }
+
+  &__enter-mail:hover {
+    background: #dedede;
+  }
+
+  &__get-plus {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    text-align: center;
+    color: #0080ff;
+    transition: color .15s ease-out;
+  }
+
+  &__get-plus:hover {
+    color: #cc0000;
+  }
+}

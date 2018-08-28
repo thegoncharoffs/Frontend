@@ -1,0 +1,148 @@
+.top-block {
+  position: relative;
+  box-sizing: content-box;
+  display: flex;
+  width: 900px;
+  //width: calc(100% - 212px);
+  margin: 0 auto 15px;
+  //margin-right: -212px;
+  padding: 0 36px 0 0;
+  min-height: 215px;
+
+  &__news {
+    flex: 0 0 66.6%;
+    display: block;
+    padding-right: 6px;
+  }
+
+  &__news-list {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  &__news-item:hover {
+    color:#cc0000;
+  }
+
+  &__media {
+    display: inline-block;
+    margin-right: 12px;
+    white-space: nowrap;
+    color: #0054b9;
+    touch-action: manipulation;
+    text-decoration: none;
+    outline: none;
+    font-size: 123%;
+    font-weight: 500;
+  }
+
+  &__media:hover {
+    color: #cc0000;
+  }
+
+  &__city {
+    display: inline-block;
+    margin-right: 12px;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #6da2e1;
+    touch-action: manipulation;
+    text-decoration: none;
+    outline: none;
+    font-size: 123%;
+    font-weight: 500;
+  }
+
+  &__city:hover {
+    color: #cc0000;
+  }
+
+  &__date {
+    display: inline-block;
+    font-size: 84.6%;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #999;
+  }
+
+  &__news-item {
+    margin-bottom: 10px;
+  }
+
+  &__securities {
+    position: relative;
+  }
+
+  &__currency-1 {
+    display: inline-block;
+  }
+
+  &__currency-2 {
+    display: inline-block;
+  }
+
+  &__security {
+    display: inline-block;
+  }
+
+  &__name {
+     font-weight: 500;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     transition: color .15s ease-out;
+     touch-action: manipulation;
+     text-decoration: none;
+     outline: none;
+   }
+
+  &__name:hover {
+    color: #cc0000;
+  }
+
+  &__difference {
+    //margin: -2px -2px -2px 7px;
+    padding: 3px 0;
+    text-align: right;
+    margin-right: 18px;
+  }
+
+  &_negative {
+    color: #d04d4d;
+  }
+
+  &_positive {
+    color: #069922;
+  }
+
+  &__currency-more-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: bottom;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15'%3E%3Cellipse cx='2.5' cy='7.5' rx='1.5' ry='1.5'/%3E%3Cellipse cx='7.5' cy='7.5' rx='1.5' ry='1.5'/%3E%3Cellipse cx='12.5' cy='7.5' rx='1.5' ry='1.5'/%3E%3C/svg%3E");
+  }
+
+  &__advert {
+    flex: 0 1 33.3%;
+    display: block;
+    box-sizing: border-box;
+    padding-right: 6px;
+  }
+
+  &__title {
+    margin-top: 13px;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: black;
+    font-size: 123%;
+    font-weight: 500;
+  }
+
+  &__title:hover {
+    color: #cc0000;
+  }
+
+  &__description {
+    margin-top: 5px;
+  }
+}

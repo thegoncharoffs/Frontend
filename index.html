@@ -4,8 +4,146 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="assets/styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-Hello world!
+<div class="layout">
+    <div class="header">
+        <a class="header__location" href="">
+            <svg class="header__geo-arrow" width='0' height='0' fill="#999" viewBox='0 0 19 19'>
+                <path  d='m15 4l-11.9 5.3 5.8 0.8 0.5 5.5 5.6-11.6z'/>
+            </svg>
+            <div class="header__city">Москва</div>
+        </a>
+        <div class="header__empty"></div>
+        <a class="header__settings" href="">Настройки</a>
+    </div>
+
+    <div class="side-desk-wrapper">
+        <div class="mail-box">
+            <div class="mail-box__inner-box">
+                <div class="mail-box__top-container">
+                    <a class="mail-box__mail" href="">Почта</a>
+                    <a class="mail-box__get-mail" href="">Завести почту</a>
+                </div>
+                <a class="mail-box__enter-mail" href="">Войти в почту</a>
+                <a class="mail-box__get-plus" href="">Получить плюс</a>
+            </div>
+        </div>
+
+        <div class="dzen-box">
+            <div class="dzen-box__inner-box">
+                <div class="dzen-box__source">CAR.RU</div>
+                <div class="dzen-box__dzen-source-icon"></div>
+                <div class="dzen-box__text">К дилерам приехала новая Lada Granta</div>
+            </div>
+            <div class="dzen-box__dzen-settings-icon"></div>
+        </div>
+    </div>
+
+    <div class="top-block">
+        <div class="top-block__news">
+            <div class="top-block__media">
+                Сейчас в СМИ
+            </div>
+            <div class="top-block__city">
+                В Москве
+            </div>
+            <div class="top-block__date">
+                22 августа, среда 11:39
+            </div>
+            <ul class="top-block__news-list">
+                <li class="top-block__news-item">CNBC: Россия потеряла в море ракету с ядерным двигателем</li>
+                <li class="top-block__news-item">Эстония и Латвия хотят взыскать с РФ ущерб за «советскую оккупацию»
+                </li>
+                <li class="top-block__news-item">Пассажиры сняли на видео посадку Ту-204 с горящим двигателем</li>
+                <li class="top-block__news-item">США заблокировали российские активы на сотни миллионов долларов</li>
+                <li class="top-block__news-item">Болтон рассказал о рычагах давления США на Россию по Сирии</li>
+            </ul>
+            <div class="top-block__securities">
+                <div class="top-block__currency-1">
+                    <a class="top-block__name">USD MOEX</a>
+                    <span class="top-block__value">67,60</span>
+                    <span class="top-block__difference top-block_positive">
+                        +0,32
+                    </span>
+                </div>
+                <div class="top-block__currency-2">
+                    <a class="top-block__name">EUR MOEX</a>
+                    <span class="top-block__value">78,30</span>
+                    <span class="top-block__difference top-block_positive">
+                        +0,45
+                    </span>
+                </div>
+                <div class="top-block__security">
+                    <a class="top-block__name">НЕФТЬ</a>
+                    <span class="top-block__value">75,66</span>
+                    <span class="top-block__difference top-block_positive">
+                        +1,23%
+                    </span>
+                </div>
+                <div class="top-block__more-icon"></div>
+            </div>
+        </div>
+
+        <div class="top-block__advert">
+            <a class="top-block__image" href="">
+                <img src="https://avatars.mds.yandex.net/get-banana/41024/x258cO5zEU83R7Ygp5H_BWxN_banana_20161021_retina_19-3_x281x29.png/optimize"
+                     width="120" height="90">
+            </a>
+            <div class="top-block__title-wrapper">
+                <a class="top-block__title" href="">
+                    <span>Яндекс приглашает</span>
+                    <br>
+                    <span>на онлайн-курс</span>
+                </a>
+            </div>
+            <div class="top-block__description">
+                по анализу данных
+            </div>
+        </div>
+    </div>
+
+    <div class="search">
+        <div class="search__tabs-list">
+            <a class="search__tab" href="">Видео</a>
+            <a class="search__tab" href="">Картинки</a>
+            <a class="search__tab" href="">Новости</a>
+            <a class="search__tab" href="">Карты</a>
+            <a class="search__tab" href="">Маркет</a>
+            <a class="search__tab" href="">Переводчик</a>
+            <a class="search__tab" href="">Музыка</a>
+            <a class="search__tab" href="">ТВ онлайн</a>
+            <a class="search__tab" href="">ещё</a>
+        </div>
+
+        <div class="search__container">
+            <div class="search__logo"></div>
+
+            <form class="search__form">
+                <input class="search__left-form" type="text">
+                <div class="search__micro-logo"></div>
+                <div class="search__keyboard-logo"></div>
+            </form>
+
+            <div class="search__button">
+                <div class="search__text-search">Поиск</div>
+                <div class="search__triangle"></div>
+            </div>
+        </div>
+
+        <div class="search__bottom">
+            <div class="search__suggest1">Найдётся всё. Например, &nbsp</div>
+            <a class="search__suggest2">температура тела кошки</a>
+        </div>
+    </div>
+
+    <div class="advert">
+        <div class="advert__container"></div>
+    </div>
+</div>
+<!-- inject:svg -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="dzen-source-icon-a" cx="45.5" cy="45.5" r="45.5"/><linearGradient x1="91.777%" y1="50%" x2="7.78%" y2="50%" id="dzen-source-icon-b"><stop stop-color="#D8D8D8" offset="0%"/><stop stop-color="#BCBCBC" offset="100%"/></linearGradient><path d="M15 4L3.1 9.3l5.8.8.5 5.5L15 4z" id="geo-arrow-a"/></defs><symbol id="dzen-settings-icon" viewBox="0 0 24 24"><circle cx="16" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="8" cy="12" r="1"/></symbol><symbol id="dzen-source-icon" viewBox="0 0 91 91"><g fill-rule="evenodd"><mask id="dzen-source-icon-c"><use xlink:href="#dzen-source-icon-a"/></mask><use xlink:href="#dzen-source-icon-a"/><path mask="url(#dzen-source-icon-c)" transform="rotate(-41 45.615 44.689)" d="M28.238 39.556h34.755v10.265H28.238z"/><path opacity=".5" mask="url(#dzen-source-icon-c)" transform="rotate(-41 45.346 81.22)" d="M27.968 76.087h34.755v10.265H27.968z"/><path opacity=".5" mask="url(#dzen-source-icon-c)" transform="rotate(-41 45.747 8.46)" d="M28.369 3.327h34.755v10.265H28.369z"/><path mask="url(#dzen-source-icon-c)" d="M29.264 15.634l32.873 11.292v10.266L29.264 25.857zm-.2 36.571L61.936 63.64v10.222L29.064 62.47z"/></g></symbol><symbol id="geo-arrow" viewBox="0 0 19 38"><use xmlns="http://www.w3.org/2000/svg" xlink:href="#geo-arrow-a"/><use xmlns="http://www.w3.org/2000/svg" xlink:href="#geo-arrow-a" transform="translate(0 19)"/></symbol><symbol id="keyboard-icon"><path opacity=".3" fill-rule="evenodd" clip-rule="evenodd" d="M25.693 0H1.54C.436 0 .013.422.013 1.527v8.961c0 1.105.423 1.527 1.527 1.527h24.153c1.104 0 1.307-.422 1.307-1.527V1.527C27 .422 26.798 0 25.693 0zm-2.672 2.061h1.935v1.934h-1.935V2.061zm-6 0h1.935v1.934h-1.935V2.061zm2.935 3v1.934h-1.935V5.061h1.935zm-5.935-3h1.935v1.934h-1.935V2.061zm2.935 3v1.934h-1.935V5.061h1.935zm-5.935-3h1.935v1.934h-1.935V2.061zm2.935 3v1.934h-1.935V5.061h1.935zm-5.935-3h1.935v1.934H8.021V2.061zm2.935 3v1.934H9.021V5.061h1.935zm-5.935-3h1.935v1.934H5.021V2.061zm-3 0h1.935v1.934H2.021V2.061zm0 3h2.994v1.934H2.021V5.061zm3.95 4.933H1.993V8.061h3.978v1.933zm.05-4.933h1.935v1.934H6.021V5.061zm13.95 4.933H7.008V8.061h12.963v1.933zm.05-7.933h1.935v1.934h-1.935V2.061zm4.95 7.933h-3.978V8.061h3.978v1.933zM25 6.995h-3.979V5.061H25v1.934z"/></symbol><symbol id="logo" viewBox="0 0 140 100"><g fill-rule="evenodd"><path d="M72.964 64.533h-2.16l-.01-23.496H58.167v2.3c0 7.171-.26 15.47-2.742 21.196H53.75v8.468h3.777v-5.043h11.658V73h3.778v-8.468zM89.74 63.01c-1.08.75-2.969 1.82-5.343 1.82-3.346 0-5.073-3.211-5.073-9.311h11.333v-2.301c0-9.15-2.968-12.522-7.502-12.522-5.774 0-8.203 6.314-8.203 14.983 0 8.294 3.454 12.735 9.067 12.735 2.698 0 4.965-.856 6.692-2.193l-.971-3.211zM46.636 41.003v11.511h-6.26v-11.51h-4.21v26.969h4.21V55.807h6.26v12.166h4.156v-26.97h-4.156zm59.629 26.96h4.587l-7.717-14.288 6.746-12.682h-4.264l-6.53 12.468V40.993h-4.21v26.97h4.21V54.53l7.178 13.431zm20.48-1.688l-.972-3.104c-.972.856-2.537 1.659-4.587 1.659-3.4 0-5.02-3.853-5.02-10.595 0-6.796 2.16-10.167 5.181-10.167 1.727 0 3.346.91 4.48 1.873l.594-3.96c-1.188-.749-2.591-1.391-5.02-1.391-6.368 0-9.66 5.404-9.66 13.859 0 9.204 3.508 13.86 9.337 13.86 2.482 0 4.21-.803 5.666-2.034zm-60.048-1.647h-7.232C61.73 58.903 62 50.608 62 44.936v-.481h4.696v20.173zm19.605-12.484H79.34c.27-4.816 1.187-7.973 3.777-7.973 2.429 0 3.185 3.371 3.185 7.973z"/><path d="M26.841 53.707v14.288h4.156V30.004H24.79c-6.098 0-11.225 4.119-11.225 12.145 0 5.726 2.267 8.83 5.667 10.542L12 67.995h4.803l6.584-14.288h3.454zm-.013-3.333h-2.212c-3.616 0-6.585-1.98-6.585-8.134 0-6.367 3.238-8.64 6.585-8.64h2.212v16.774z"/></g></symbol><symbol id="micro-icon" viewBox="0 0 18 18"><path d="M9 11.25A2.25 2.25 0 0 0 11.25 9V5.062a2.25 2.25 0 0 0-4.5 0V9A2.25 2.25 0 0 0 9 11.25zM13.5 9h-1.125c0 .848-.32 1.668-.898 2.289a3.37 3.37 0 0 1-4.954.004A3.372 3.372 0 0 1 5.625 9H4.5a4.491 4.491 0 0 0 3.937 4.461v1.727h1.125v-1.727A4.494 4.494 0 0 0 13.499 9zm0 0" fill-rule="evenodd"/></symbol></svg>
+<!-- endinject -->
 </body>
 </html>
