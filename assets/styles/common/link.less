@@ -1,0 +1,51 @@
+@import "colors.less";
+
+.link {
+  transition: color .2s ease-out;
+  cursor: pointer;
+  text-decoration: none;
+
+  //default
+  color: black;
+  font-weight: 500;
+
+  //sizes
+  &._size-s {
+    font-weight: 400;
+  }
+
+  &._size-m { //default
+    font-weight: 500;
+  }
+
+  &._size-l {
+    font-weight: 600;
+  }
+
+  &._size-xl {
+    font-weight: 700;
+  }
+
+  //color themes
+  &._default { //default
+    color: @light-blue;
+  }
+
+  &._primary-pale {
+    color: @light-blue;
+  }
+
+  &._primary {
+    color: @blue;
+  }
+
+  &._secondary {
+    color: @grey;
+  }
+
+  //hover colors
+  &._red-hover:hover {
+    color: @red;
+    fill: @red;
+  }
+}

@@ -1,0 +1,85 @@
+@import "../../common/colors.less";
+
+.traffic-widget {
+    padding-bottom: 10px;
+    line-height: 1.25;
+
+    &__title {
+        display: inline-block;
+        margin-right: 8px;
+        margin-top: 4px;
+        margin-bottom: 10px;
+        font-size: 123%;
+        font-weight: 600;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        padding-right: 16px;
+    }
+
+    &__icon {
+        width: 33px;
+        height: 30px;
+        margin-right: 8px;
+        background-image: url("../../../../assets/images/icons/traffic-icon.svg");
+        cursor: pointer;
+    }
+
+    &__rate {
+        font-size: 28px;
+        cursor: pointer;
+
+        &:hover {
+            color: @red;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__forecast-item {
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        text-align: center;
+        margin-top: -3px;
+        padding: 0 3px;
+    }
+
+    &__forecast-item-time {
+        font-size: 70%;
+        color: @grey;
+    }
+
+    &__forecast-item-value {
+        border: 2px solid #66ab3c;
+        border-radius: 50%;
+        height: 17px;
+        width: 17px;
+        text-align: center;
+        font: 12px/18px Arial, Helvetica, sans-serif;
+    }
+
+    &__settings-icon {
+        position: absolute;
+        top: 8px;
+        right: 0;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+        &:hover {
+            opacity: 0.3;
+        }
+    }
+}

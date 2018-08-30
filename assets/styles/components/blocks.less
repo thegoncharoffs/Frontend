@@ -1,193 +1,25 @@
-@import "global.less";
+@import "../common/colors.less";
 
 .blocks {
-  box-sizing: content-box;
-  width: 900px;
-  margin: 0 auto 19px;
-  padding: 0 36px 0 0;
-  display: flex;
-  justify-content: space-between;
-
-  &__column {
-    flex: 0 1 auto;
-    box-sizing: border-box;
-    width: 300px;
-    max-width: 300px;
-    padding-right: 6px;
-  }
-
-  &__item {
-    position: relative;
-    padding: 8px 4px 4px 20px;
-    margin-top: 6px;
-  }
-
-  &__weather-widget {
-    padding-bottom: 10px;
-  }
-
-  &__title {
-    display: inline-block;
-    margin-right: 8px;
-    margin-top: 4px;
-    margin-bottom: 10px;
-    font-size: 123%;
-    font-weight: 600;
-  }
-
-  &__weather-content {
+    box-sizing: content-box;
+    width: 900px;
+    margin: 0 auto 19px;
+    padding: 0 36px 0 0;
     display: flex;
-    align-items: center;
-  }
+    justify-content: space-between;
 
-  &__weather-left {
-    margin-right: 12px;
-    display: flex;
-    align-items: center;
-  }
-
-  &__weather-icon {
-    width: 48px;
-    height: 48px;
-    margin: -24px 8px -24px -4px;
-    background-image: url(../../../assets/images/weather-icon.svg);
-    background-size: 100% 100%;
-  }
-
-  &__weather-temp {
-    font-size: 28px;
-  }
-
-  &__weather-right {
-    text-decoration: none;
-    color: black;
-  }
-
-  &__weather-widget-settings-icon {
-    position: absolute;
-    top: 8px;
-    right: 0;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
-    &:hover {
-      opacity: 0.3;
+    &__column {
+        flex: 0 1 auto;
+        box-sizing: border-box;
+        width: 300px;
+        max-width: 300px;
+        padding-right: 6px;
+        justify-content: flex-start;
     }
-  }
 
-  &__services-widget {
-    padding-bottom: 10px;
-  }
-
-  &__services-list {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
-
-  &__services-item {
-    margin-bottom: 10px;
-  }
-
-  &__services-widget-settings-icon {
-    position: absolute;
-    top: 8px;
-    right: 0;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
-    &:hover {
-      opacity: 0.3;
+    &__item {
+        position: relative;
+        padding: 8px 4px 4px 20px;
+        margin-top: 6px;
     }
-  }
-
-  &__traffic-widget {
-    padding-bottom: 10px;
-  }
-
-  &__traffic-content {
-    display: flex;
-    align-items: center;
-  }
-  &__traffic-left {
-    display: flex;
-    align-items: center;
-    padding-right: 16px;
-  }
-
-  &__traffic-icon {
-    width: 33px;
-    height: 30px;
-    margin-right: 8px;
-    background-image: url("../../../assets/images/traffic-icon.svg");
-    cursor: pointer;
-  }
-
-  &__traffic-rate {
-    font-size: 28px;
-  }
-
-  &__traffic-right {
-    display: flex;
-    align-items: center;
-  }
-
-  &__traffic-forecast-item {
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    text-align: center;
-    margin-top: -3px;
-    padding: 0 3px;
-  }
-
-  &__traffic-forecast-item-time {
-    font-size: 70%;
-    color: @grey;
-  }
-
-  &__traffic-forecast-item-value {
-    border: 2px solid #66ab3c;
-    border-radius: 50%;
-    height: 17px;
-    width: 17px;
-    text-align: center;
-    font: 12px/18px Arial,Helvetica,sans-serif;
-  }
-
-  &__tv-widget-settings-icon {
-    position: absolute;
-    top: 8px;
-    right: 0;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
-    &:hover {
-      opacity: 0.3;
-    }
-  }
-
-  &__services-item-elem {
-    margin-right: 8px;
-  }
-
-  &__billboard-list {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
-
-  &__billboard-item {
-    margin-bottom: 10px;
-  }
-
-  &__billboard-item-elem {
-    margin-right: 8px;
-  }
 }

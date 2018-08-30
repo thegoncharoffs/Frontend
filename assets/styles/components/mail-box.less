@@ -1,3 +1,4 @@
+@import "../common/colors.less";
 .mail-box {
   max-height: 600px;
   padding: 2px 2px 0 18px;
@@ -7,6 +8,7 @@
     margin-bottom: 8px;
     border-radius: 3px;
     padding: 12px 14px;
+
     box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
   }
 
@@ -21,30 +23,38 @@
   &__mail {
     text-decoration: none;
     color: black;
+
+    &:hover {
+      color: @red;
+    }
   }
 
   &__get-mail {
     text-decoration: none;
-    color: rgba(0,0,0,.45);
+    color: @grey;
+
+    &:hover {
+      color: @red;
+    }
   }
 
   &__enter-mail {
-    box-sizing: border-box;
     display: block;
     margin-top: 18px;
     padding: 7px 0 8px;
+
     border-radius: 3px;
     background: #e8e8e8;
+
     text-decoration: none;
     color: black;
     text-align: center;
     vertical-align: center;
-
     transition: background .15s;
-  }
 
-  &__enter-mail:hover {
-    background: #dedede;
+    &:hover {
+      background: #dedede;
+    }
   }
 
   &__get-plus {
@@ -52,9 +62,15 @@
     width: 100%;
     margin-top: 14px;
     margin-bottom: 4px;
+
     text-align: center;
     text-decoration: none;
-    color: #0080ff;
+    color: @blue;
+
     transition: color .15s ease-out;
+
+    &:hover {
+      color: @red;
+    }
   }
 }

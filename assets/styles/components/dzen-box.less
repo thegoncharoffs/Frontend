@@ -1,35 +1,39 @@
-@import "global.less";
+@import "../common/colors.less";
 
 .dzen-box {
-  overflow: hidden;
   max-height: 600px;
   padding: 2px 2px 0 18px;
 
   &__wrapper {
     margin-right: 10px;
     margin-bottom: 8px;
-  }
 
-  &__wrapper:hover .dzen-box__inner-box {
-    transform: translateX(-15px);
+    &:hover .dzen-box__dzen-settings-icon {
+      opacity: 1;
+    }
+
+    &:hover .dzen-box__inner-box {
+      transform: translateX(-15px);
+    }
   }
 
   &__inner-box {
     box-sizing: border-box;
     position: relative;
     width: 180px;
-
     padding: 12px 14px;
+
     border-radius: 3px;
-    transition: transform 0.2s ease-in;
     box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+
+    transition: transform 0.2s ease-in;
   }
 
   &__dzen-source-icon {
     position: absolute;
     top: 8px;
     right: 8px;
-    background: no-repeat 50% 50% url(../../../assets/images/dzen-source-icon.svg);
+    background: no-repeat 50% 50% url(../../../assets/images/icons/dzen-source-icon.svg);
     background-size: 18px 18px;
     width: 24px;
     height: 24px;
@@ -56,19 +60,21 @@
 
   &__dzen-settings-icon {
     position: absolute;
-    display: none;
+
     top: 140px;
     right: 2px;
     width: 24px;
     height: 24px;
+
+    opacity: 0;
     fill: @grey;
-    transition: display .3s ease 1s, color .2s ease 1s;
+
+    cursor: pointer;
+
+    transition: opacity .3s ease 0.5s, color .2s ease;
+
     &:hover {
       fill: black;
     }
-  }
-
-  &__wrapper:hover .dzen-box__dzen-settings-icon {
-    display: block;
   }
 }

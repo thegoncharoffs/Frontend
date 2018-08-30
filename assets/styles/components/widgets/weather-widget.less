@@ -1,0 +1,62 @@
+@import "../../common/colors";
+.weather-widget {
+    padding-bottom: 10px;
+    line-height: 1.25;
+
+    &__title {
+        display: inline-block;
+        margin-right: 8px;
+        margin-top: 4px;
+        margin-bottom: 10px;
+        font-size: 123%;
+        font-weight: 600;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left {
+        margin-right: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__weather-icon {
+        width: 48px;
+        height: 48px;
+        margin: -24px 8px -24px -4px;
+        background-image: url(../../../../assets/images/icons/weather-icon.svg);
+        background-size: 100% 100%;
+        cursor: pointer;
+    }
+
+    &__temp {
+        font-size: 28px;
+        cursor: pointer;
+
+        &:hover {
+            color: @red;
+        }
+    }
+
+    &__right {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__settings-icon {
+        position: absolute;
+        top: 8px;
+        right: 0;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+        &:hover {
+            opacity: 0.3;
+        }
+    }
+}
