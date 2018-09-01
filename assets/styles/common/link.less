@@ -1,51 +1,66 @@
 @import "colors.less";
 
 .link {
-  transition: color .2s ease-out;
-  cursor: pointer;
-  text-decoration: none;
+    transition: color .2s ease-out;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
 
-  //default
-  color: black;
-  font-weight: 500;
-
-  //sizes
-  &._size-s {
-    font-weight: 400;
-  }
-
-  &._size-m { //default
+    //default
+    color: black;
     font-weight: 500;
-  }
 
-  &._size-l {
-    font-weight: 600;
-  }
+    //sizes
+    &._size-s {
+        font-weight: 400;
+    }
 
-  &._size-xl {
-    font-weight: 700;
-  }
+    &._size-m { //default
+        font-weight: 500;
+    }
 
-  //color themes
-  &._default { //default
-    color: @light-blue;
-  }
+    &._size-l {
+        font-weight: 600;
+    }
 
-  &._primary-pale {
-    color: @light-blue;
-  }
+    &._size-xl {
+        font-weight: 700;
+    }
 
-  &._primary {
-    color: @blue;
-  }
+    //color themes
+    &._default { //default
+        color: @light-blue;
+    }
 
-  &._secondary {
-    color: @grey;
-  }
+    &._primary-pale {
+        color: @light-blue;
+    }
 
-  //hover colors
-  &._red-hover:hover {
-    color: @red;
-    fill: @red;
-  }
+    &._primary {
+        color: @blue;
+    }
+
+    &._secondary {
+        color: @grey;
+    }
+
+    &._ordinary {
+        color: @sky-blue;
+    }
+
+    //hover colors
+    &._red-hover:hover {
+        color: @red;
+        fill: @red;
+    }
+
+    &._orange-hover:hover {
+        color: @orange;
+        fill: @orange;
+    }
+
+    &._underline-hover {
+        text-decoration: underline;
+    }
 }

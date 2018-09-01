@@ -17,7 +17,7 @@ const gulp = require("gulp"),
 //Преобразование всех less файлов в один main.css
 gulp.task('less', function() {
     //Берем assets/styles/main.less
-    return gulp.src("assets/styles/main.less") //minimatch
+    return gulp.src("assets/styles/main-mail.less") //minimatch
         //Преобразуем в css
         .pipe(less())
         //Добавляем префиксы???
@@ -53,7 +53,7 @@ gulp.task("svg", () => {
                     },
                     {
                         removeAttrs: {
-                            attrs: "(fill|stroke)"
+                            //attrs: "(fill|stroke)"
                         }
                     },
                     {

@@ -1,0 +1,37 @@
+.low-advert {
+    width: 300px;
+    margin-top: 20px;
+    position: relative;
+    border: 1px solid rgba(0,0,0,.12);
+
+    text-decoration: none;
+    color: black;
+
+    transition: box-shadow .5s, border-color .5s;
+
+    &:hover {
+        box-shadow: 0 4px 20px 0 rgba(0,0,0,.16);
+        border-color: white;
+    }
+
+    &__inner-block {
+        cursor: pointer;
+        padding: 8px 20px 8px 42px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__icon {
+        margin-top: 8px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__text {
+        margin-left: 15px;
+    }
+
+    &__text-bottom {
+        font-size: 13px;
+    }
+}
